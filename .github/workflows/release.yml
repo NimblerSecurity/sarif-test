@@ -8,7 +8,9 @@ jobs:
   upload-sarif:
     runs-on: ubuntu-latest
     steps:
-      - name: Upload SARIF file
+      - name: (1) Clone Code
+          uses: actions/checkout@v3
+      - name: (2) Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: results.sarif
