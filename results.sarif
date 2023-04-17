@@ -10,10 +10,10 @@
           "informationUri": "https://app.nightvision.net/scans/e4072980-6c8d-4b07-a3fe-2e2031059b40/issues",
           "rules": [
             {
-              "id": "cc387c24-2d6c-430d-910d-02e6d4aac81f-SQL Injection - PostgreSQL",
-              "name": "cc387c24-2d6c-430d-910d-02e6d4aac81f-SQL Injection - PostgreSQL",
+              "id": "6827faf6-4fc4-4a5f-8e6d-975ef3ac39cb-SQL Injection - PostgreSQL",
+              "name": "6827faf6-4fc4-4a5f-8e6d-975ef3ac39cb-SQL Injection - PostgreSQL",
               "shortDescription": {
-                "text": "cc387c24-2d6c-430d-910d-02e6d4aac81f-SQL Injection - PostgreSQL"
+                "text": "SQL Injection - PostgreSQL"
               },
               "fullDescription": {
                 "text": "This is a SQL Injection - PostgreSQL vulnerability on the `searchText` request parameter with the payload `'`. This payload was submitted in the `searchText` parameter within a POST request. The application responded with an `org.postgresql.util.PSQLException` which indicates that the application is vulnerable to SQL Injection. This proof-of-concept attack demonstrates that it is possible to inject arbitrary SQL into the application's response. If an attacker can control a query that is executed in the application's database, then the attacker could use this access to read, modify, or delete data from the database. Furthermore, the attacker could use this access to gain further access to the application or the underlying system.\nMore information on https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
@@ -24,10 +24,10 @@
               }
             },
             {
-              "id": "a7cec879-73e1-43be-bc13-c594aec2c60a-Spring4Shell",
-              "name": "a7cec879-73e1-43be-bc13-c594aec2c60a-Spring4Shell",
+              "id": "cea5f03b-edf6-4214-b99b-dd5f2d4e0606-Spring4Shell",
+              "name": "cea5f03b-edf6-4214-b99b-dd5f2d4e0606-Spring4Shell",
               "shortDescription": {
-                "text": "a7cec879-73e1-43be-bc13-c594aec2c60a-Spring4Shell"
+                "text": "Spring4Shell"
               },
               "fullDescription": {
                 "text": "This proof-of-concept attack demonstrates a **Spring4Shell** vulnerability. The attack was performed using a **POST** request to the `/search` endpoint on `127.0.0.1:9000`. The payload `class.module.classLoader.DefaultAssertionStatus=nonsense` was sent in the request body. This payload is a specially crafted string that can be used to execute arbitrary code on the target application. The application responded with an HTTP 400 status code, which indicates that the payload was accepted and the code was executed. \n\nThis vulnerability can be used to execute arbitrary code on the target system, which can be used to gain access to sensitive data, modify data, or cause a denial of service.\nMore information on https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
@@ -38,10 +38,10 @@
               }
             },
             {
-              "id": "bf413619-507c-40f1-b460-a38111225765-Parameter Tampering",
-              "name": "bf413619-507c-40f1-b460-a38111225765-Parameter Tampering",
+              "id": "45838f24-7af0-4796-844e-507d34e5698c-Parameter Tampering",
+              "name": "45838f24-7af0-4796-844e-507d34e5698c-Parameter Tampering",
               "shortDescription": {
-                "text": "bf413619-507c-40f1-b460-a38111225765-Parameter Tampering"
+                "text": "Parameter Tampering"
               },
               "fullDescription": {
                 "text": "This proof-of-concept attack demonstrates a Parameter Tampering vulnerability. The `POST` request was sent to `127.0.0.1:9000/search` with the parameter `searchText` containing the payload `\\u0000`. This payload was echoed unmodified in the application's response. \n\nParameter Tampering is a type of attack where an attacker modifies the value of a parameter in an HTTP request in order to gain access to protected resources, or to manipulate the application's behavior. In this case, an attacker was able to inject the `\\u0000` payload into the `searchText` parameter, and the application echoed the payload unmodified in the response. \n\nThis type of attack can allow an attacker to access protected resources, or to manipulate the application's behavior. For example, an attacker could use this vulnerability to bypass authentication or authorization checks, or to gain access to sensitive data. In addition, an attacker could use this vulnerability to perform a denial-of-service attack, or to gain access to the application's underlying system.\nMore information on https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
@@ -52,10 +52,10 @@
               }
             },
             {
-              "id": "02661cfb-bac7-4533-9589-c3e59119b718-Cross Site Scripting (Reflected)",
-              "name": "02661cfb-bac7-4533-9589-c3e59119b718-Cross Site Scripting (Reflected)",
+              "id": "2fe91fb1-5bd4-483e-a491-80865169a610-Cross Site Scripting (Reflected)",
+              "name": "2fe91fb1-5bd4-483e-a491-80865169a610-Cross Site Scripting (Reflected)",
               "shortDescription": {
-                "text": "02661cfb-bac7-4533-9589-c3e59119b718-Cross Site Scripting (Reflected)"
+                "text": "Cross Site Scripting (Reflected)"
               },
               "fullDescription": {
                 "text": "This is a Cross Site Scripting (Reflected) vulnerability on the `searchText` parameter with the payload `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. The payload was submitted in the `searchText` parameter as part of a `POST` request to the `/search` endpoint on the `127.0.0.1:9000` domain. This input was echoed unmodified in the application's response, as evidenced by the string `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. This proof-of-concept attack demonstrates that it is possible to inject arbitrary JavaScript into the application's response. If an attacker can control a script that is executed in the victim's browser, then the attacker could use this access to steal cookies, perform phishing attacks, or perform other malicious actions.\nMore information on https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
@@ -78,7 +78,7 @@
       ],
       "results": [
         {
-          "ruleId": "cc387c24-2d6c-430d-910d-02e6d4aac81f-SQL Injection - PostgreSQL",
+          "ruleId": "6827faf6-4fc4-4a5f-8e6d-975ef3ac39cb-SQL Injection - PostgreSQL",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -100,7 +100,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "cc387c24-2d6c-430d-910d-02e6d4aac81f"
+            "nightvisionIssueID/v1": "6827faf6-4fc4-4a5f-8e6d-975ef3ac39cb"
           },
           "baselineState": "new",
           "rank": 100,
@@ -111,7 +111,7 @@
           }
         },
         {
-          "ruleId": "a7cec879-73e1-43be-bc13-c594aec2c60a-Spring4Shell",
+          "ruleId": "cea5f03b-edf6-4214-b99b-dd5f2d4e0606-Spring4Shell",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -133,7 +133,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "a7cec879-73e1-43be-bc13-c594aec2c60a"
+            "nightvisionIssueID/v1": "cea5f03b-edf6-4214-b99b-dd5f2d4e0606"
           },
           "baselineState": "new",
           "rank": 100,
@@ -144,7 +144,7 @@
           }
         },
         {
-          "ruleId": "bf413619-507c-40f1-b460-a38111225765-Parameter Tampering",
+          "ruleId": "45838f24-7af0-4796-844e-507d34e5698c-Parameter Tampering",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -166,7 +166,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "bf413619-507c-40f1-b460-a38111225765"
+            "nightvisionIssueID/v1": "45838f24-7af0-4796-844e-507d34e5698c"
           },
           "baselineState": "new",
           "rank": 100,
@@ -177,7 +177,7 @@
           }
         },
         {
-          "ruleId": "02661cfb-bac7-4533-9589-c3e59119b718-Cross Site Scripting (Reflected)",
+          "ruleId": "2fe91fb1-5bd4-483e-a491-80865169a610-Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -199,7 +199,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "02661cfb-bac7-4533-9589-c3e59119b718"
+            "nightvisionIssueID/v1": "2fe91fb1-5bd4-483e-a491-80865169a610"
           },
           "baselineState": "new",
           "rank": 100,
