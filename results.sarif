@@ -10,59 +10,59 @@
           "informationUri": "https://app.nightvision.net/scans/e4072980-6c8d-4b07-a3fe-2e2031059b40/issues",
           "rules": [
             {
-              "id": "a804fc30-8fde-4a15-bd70-b035d01cd650-SQL Injection - PostgreSQL",
-              "name": "a804fc30-8fde-4a15-bd70-b035d01cd650-SQL Injection - PostgreSQL",
+              "id": "687f8879-bac7-4c77-a9e2-afbe35abb7c2-SQL Injection - PostgreSQL",
+              "name": "687f8879-bac7-4c77-a9e2-afbe35abb7c2-SQL Injection - PostgreSQL",
               "shortDescription": {
                 "text": "SQL Injection - PostgreSQL"
               },
               "fullDescription": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **SQL Injection - PostgreSQL** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This is a SQL Injection - PostgreSQL vulnerability on the `searchText` request parameter with the payload `'`. This payload was submitted in the `searchText` parameter within a POST request. The application responded with an `org.postgresql.util.PSQLException` which indicates that the application is vulnerable to SQL Injection. This proof-of-concept attack demonstrates that it is possible to inject arbitrary SQL into the application's response. If an attacker can control a query that is executed in the application's database, then the attacker could use this access to read, modify, or delete data from the database. Furthermore, the attacker could use this access to gain further access to the application or the underlying system.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **SQL Injection - PostgreSQL** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This is a SQL Injection - PostgreSQL vulnerability on the `searchText` request parameter with the payload `'`. This payload was submitted in the `searchText` parameter within a POST request. The application responded with an `org.postgresql.util.PSQLException` which indicates that the application is vulnerable to SQL Injection. This proof-of-concept attack demonstrates that it is possible to inject arbitrary SQL into the application's response. If an attacker can control a query that is executed in the application's database, then the attacker could use this access to read, modify, or delete data from the database. Furthermore, the attacker could use this access to gain further access to the application or the underlying system.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               },
               "helpUri": "https://docs.nightvision.net",
               "help": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **SQL Injection - PostgreSQL** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This is a SQL Injection - PostgreSQL vulnerability on the `searchText` request parameter with the payload `'`. This payload was submitted in the `searchText` parameter within a POST request. The application responded with an `org.postgresql.util.PSQLException` which indicates that the application is vulnerable to SQL Injection. This proof-of-concept attack demonstrates that it is possible to inject arbitrary SQL into the application's response. If an attacker can control a query that is executed in the application's database, then the attacker could use this access to read, modify, or delete data from the database. Furthermore, the attacker could use this access to gain further access to the application or the underlying system.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **SQL Injection - PostgreSQL** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This is a SQL Injection - PostgreSQL vulnerability on the `searchText` request parameter with the payload `'`. This payload was submitted in the `searchText` parameter within a POST request. The application responded with an `org.postgresql.util.PSQLException` which indicates that the application is vulnerable to SQL Injection. This proof-of-concept attack demonstrates that it is possible to inject arbitrary SQL into the application's response. If an attacker can control a query that is executed in the application's database, then the attacker could use this access to read, modify, or delete data from the database. Furthermore, the attacker could use this access to gain further access to the application or the underlying system.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               }
             },
             {
-              "id": "a26e0fbf-bbb1-4380-9301-d465563b8ac0-Spring4Shell",
-              "name": "a26e0fbf-bbb1-4380-9301-d465563b8ac0-Spring4Shell",
+              "id": "3734bd14-7a02-4cf0-9eb6-2476b422cc61-Spring4Shell",
+              "name": "3734bd14-7a02-4cf0-9eb6-2476b422cc61-Spring4Shell",
               "shortDescription": {
                 "text": "Spring4Shell"
               },
               "fullDescription": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **Spring4Shell** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This proof-of-concept attack demonstrates a **Spring4Shell** vulnerability. The attack was performed using a **POST** request to the `/search` endpoint on `127.0.0.1:9000`. The payload `class.module.classLoader.DefaultAssertionStatus=nonsense` was sent in the request body. This payload is a specially crafted string that can be used to execute arbitrary code on the target application. The application responded with an HTTP 400 status code, which indicates that the payload was accepted and the code was executed. \n\nThis vulnerability can be used to execute arbitrary code on the target system, which can be used to gain access to sensitive data, modify data, or cause a denial of service.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **Spring4Shell** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This proof-of-concept attack demonstrates a **Spring4Shell** vulnerability. The attack was performed using a **POST** request to the `/search` endpoint on `127.0.0.1:9000`. The payload `class.module.classLoader.DefaultAssertionStatus=nonsense` was sent in the request body. This payload is a specially crafted string that can be used to execute arbitrary code on the target application. The application responded with an HTTP 400 status code, which indicates that the payload was accepted and the code was executed. \n\nThis vulnerability can be used to execute arbitrary code on the target system, which can be used to gain access to sensitive data, modify data, or cause a denial of service.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               },
               "helpUri": "https://docs.nightvision.net",
               "help": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **Spring4Shell** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This proof-of-concept attack demonstrates a **Spring4Shell** vulnerability. The attack was performed using a **POST** request to the `/search` endpoint on `127.0.0.1:9000`. The payload `class.module.classLoader.DefaultAssertionStatus=nonsense` was sent in the request body. This payload is a specially crafted string that can be used to execute arbitrary code on the target application. The application responded with an HTTP 400 status code, which indicates that the payload was accepted and the code was executed. \n\nThis vulnerability can be used to execute arbitrary code on the target system, which can be used to gain access to sensitive data, modify data, or cause a denial of service.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **Spring4Shell** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This proof-of-concept attack demonstrates a **Spring4Shell** vulnerability. The attack was performed using a **POST** request to the `/search` endpoint on `127.0.0.1:9000`. The payload `class.module.classLoader.DefaultAssertionStatus=nonsense` was sent in the request body. This payload is a specially crafted string that can be used to execute arbitrary code on the target application. The application responded with an HTTP 400 status code, which indicates that the payload was accepted and the code was executed. \n\nThis vulnerability can be used to execute arbitrary code on the target system, which can be used to gain access to sensitive data, modify data, or cause a denial of service.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               }
             },
             {
-              "id": "100ac83b-cf23-4b35-9def-47e06e63b63a-Parameter Tampering",
-              "name": "100ac83b-cf23-4b35-9def-47e06e63b63a-Parameter Tampering",
+              "id": "c5f54d9d-13ea-4583-bcb0-a0cb6608e56f-Parameter Tampering",
+              "name": "c5f54d9d-13ea-4583-bcb0-a0cb6608e56f-Parameter Tampering",
               "shortDescription": {
                 "text": "Parameter Tampering"
               },
               "fullDescription": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **Parameter Tampering** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This proof-of-concept attack demonstrates a Parameter Tampering vulnerability. The `POST` request was sent to `127.0.0.1:9000/search` with the parameter `searchText` containing the payload `\\u0000`. This payload was echoed unmodified in the application's response. \n\nParameter Tampering is a type of attack where an attacker modifies the value of a parameter in an HTTP request in order to gain access to protected resources, or to manipulate the application's behavior. In this case, an attacker was able to inject the `\\u0000` payload into the `searchText` parameter, and the application echoed the payload unmodified in the response. \n\nThis type of attack can allow an attacker to access protected resources, or to manipulate the application's behavior. For example, an attacker could use this vulnerability to bypass authentication or authorization checks, or to gain access to sensitive data. In addition, an attacker could use this vulnerability to perform a denial-of-service attack, or to gain access to the application's underlying system.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **Parameter Tampering** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This proof-of-concept attack demonstrates a Parameter Tampering vulnerability. The `POST` request was sent to `127.0.0.1:9000/search` with the parameter `searchText` containing the payload `\\u0000`. This payload was echoed unmodified in the application's response. \n\nParameter Tampering is a type of attack where an attacker modifies the value of a parameter in an HTTP request in order to gain access to protected resources, or to manipulate the application's behavior. In this case, an attacker was able to inject the `\\u0000` payload into the `searchText` parameter, and the application echoed the payload unmodified in the response. \n\nThis type of attack can allow an attacker to access protected resources, or to manipulate the application's behavior. For example, an attacker could use this vulnerability to bypass authentication or authorization checks, or to gain access to sensitive data. In addition, an attacker could use this vulnerability to perform a denial-of-service attack, or to gain access to the application's underlying system.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               },
               "helpUri": "https://docs.nightvision.net",
               "help": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **Parameter Tampering** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This proof-of-concept attack demonstrates a Parameter Tampering vulnerability. The `POST` request was sent to `127.0.0.1:9000/search` with the parameter `searchText` containing the payload `\\u0000`. This payload was echoed unmodified in the application's response. \n\nParameter Tampering is a type of attack where an attacker modifies the value of a parameter in an HTTP request in order to gain access to protected resources, or to manipulate the application's behavior. In this case, an attacker was able to inject the `\\u0000` payload into the `searchText` parameter, and the application echoed the payload unmodified in the response. \n\nThis type of attack can allow an attacker to access protected resources, or to manipulate the application's behavior. For example, an attacker could use this vulnerability to bypass authentication or authorization checks, or to gain access to sensitive data. In addition, an attacker could use this vulnerability to perform a denial-of-service attack, or to gain access to the application's underlying system.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **Parameter Tampering** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This proof-of-concept attack demonstrates a Parameter Tampering vulnerability. The `POST` request was sent to `127.0.0.1:9000/search` with the parameter `searchText` containing the payload `\\u0000`. This payload was echoed unmodified in the application's response. \n\nParameter Tampering is a type of attack where an attacker modifies the value of a parameter in an HTTP request in order to gain access to protected resources, or to manipulate the application's behavior. In this case, an attacker was able to inject the `\\u0000` payload into the `searchText` parameter, and the application echoed the payload unmodified in the response. \n\nThis type of attack can allow an attacker to access protected resources, or to manipulate the application's behavior. For example, an attacker could use this vulnerability to bypass authentication or authorization checks, or to gain access to sensitive data. In addition, an attacker could use this vulnerability to perform a denial-of-service attack, or to gain access to the application's underlying system.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               }
             },
             {
-              "id": "ef077226-ac09-43ee-827f-b29d5122b0f9-Cross Site Scripting (Reflected)",
-              "name": "ef077226-ac09-43ee-827f-b29d5122b0f9-Cross Site Scripting (Reflected)",
+              "id": "b352aaeb-929e-4d35-8849-b4dcd500e5d3-Cross Site Scripting (Reflected)",
+              "name": "b352aaeb-929e-4d35-8849-b4dcd500e5d3-Cross Site Scripting (Reflected)",
               "shortDescription": {
                 "text": "Cross Site Scripting (Reflected)"
               },
               "fullDescription": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **Cross Site Scripting (Reflected)** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This is a Cross Site Scripting (Reflected) vulnerability on the `searchText` parameter with the payload `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. The payload was submitted in the `searchText` parameter as part of a `POST` request to the `/search` endpoint on the `127.0.0.1:9000` domain. This input was echoed unmodified in the application's response, as evidenced by the string `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. This proof-of-concept attack demonstrates that it is possible to inject arbitrary JavaScript into the application's response. If an attacker can control a script that is executed in the victim's browser, then the attacker could use this access to steal cookies, perform phishing attacks, or perform other malicious actions.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **Cross Site Scripting (Reflected)** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This is a Cross Site Scripting (Reflected) vulnerability on the `searchText` parameter with the payload `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. The payload was submitted in the `searchText` parameter as part of a `POST` request to the `/search` endpoint on the `127.0.0.1:9000` domain. This input was echoed unmodified in the application's response, as evidenced by the string `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. This proof-of-concept attack demonstrates that it is possible to inject arbitrary JavaScript into the application's response. If an attacker can control a script that is executed in the victim's browser, then the attacker could use this access to steal cookies, perform phishing attacks, or perform other malicious actions.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               },
               "helpUri": "https://docs.nightvision.net",
               "help": {
-                "text": "🚨 **Exploitable Vulnerability Found** 🚨\nℹ️ The /search URL path is vulnerable to **Cross Site Scripting (Reflected)** via a `POST` request. The application declared the /search endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **line `36`**\n**Description**: This is a Cross Site Scripting (Reflected) vulnerability on the `searchText` parameter with the payload `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. The payload was submitted in the `searchText` parameter as part of a `POST` request to the `/search` endpoint on the `127.0.0.1:9000` domain. This input was echoed unmodified in the application's response, as evidenced by the string `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. This proof-of-concept attack demonstrates that it is possible to inject arbitrary JavaScript into the application's response. If an attacker can control a script that is executed in the victim's browser, then the attacker could use this access to steal cookies, perform phishing attacks, or perform other malicious actions.\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
+                "text": "🚨 **Exploitable Vulnerability Found** 🚨\n\nℹ️ The `/search` URL path is vulnerable to **Cross Site Scripting (Reflected)** via a `POST` request. The application declared the `/search` endpoint in the file `src/main/java/hawk/controller/SearchController.java` on **Line 36**\n\n**Description**: This is a Cross Site Scripting (Reflected) vulnerability on the `searchText` parameter with the payload `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. The payload was submitted in the `searchText` parameter as part of a `POST` request to the `/search` endpoint on the `127.0.0.1:9000` domain. This input was echoed unmodified in the application's response, as evidenced by the string `\"\u003e\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e`. This proof-of-concept attack demonstrates that it is possible to inject arbitrary JavaScript into the application's response. If an attacker can control a script that is executed in the victim's browser, then the attacker could use this access to steal cookies, perform phishing attacks, or perform other malicious actions.\n\n🔍 For more information see the issue on **NightVision** here: https://api.nightvision.net/api/v1/scan/e4072980-6c8d-4b07-a3fe-2e2031059b40/"
               }
             }
           ]
@@ -78,7 +78,7 @@
       ],
       "results": [
         {
-          "ruleId": "a804fc30-8fde-4a15-bd70-b035d01cd650-SQL Injection - PostgreSQL",
+          "ruleId": "687f8879-bac7-4c77-a9e2-afbe35abb7c2-SQL Injection - PostgreSQL",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -100,7 +100,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "a804fc30-8fde-4a15-bd70-b035d01cd650"
+            "nightvisionIssueID/v1": "687f8879-bac7-4c77-a9e2-afbe35abb7c2"
           },
           "baselineState": "new",
           "rank": 100,
@@ -111,7 +111,7 @@
           }
         },
         {
-          "ruleId": "a26e0fbf-bbb1-4380-9301-d465563b8ac0-Spring4Shell",
+          "ruleId": "3734bd14-7a02-4cf0-9eb6-2476b422cc61-Spring4Shell",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -133,7 +133,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "a26e0fbf-bbb1-4380-9301-d465563b8ac0"
+            "nightvisionIssueID/v1": "3734bd14-7a02-4cf0-9eb6-2476b422cc61"
           },
           "baselineState": "new",
           "rank": 100,
@@ -144,7 +144,7 @@
           }
         },
         {
-          "ruleId": "100ac83b-cf23-4b35-9def-47e06e63b63a-Parameter Tampering",
+          "ruleId": "c5f54d9d-13ea-4583-bcb0-a0cb6608e56f-Parameter Tampering",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -166,7 +166,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "100ac83b-cf23-4b35-9def-47e06e63b63a"
+            "nightvisionIssueID/v1": "c5f54d9d-13ea-4583-bcb0-a0cb6608e56f"
           },
           "baselineState": "new",
           "rank": 100,
@@ -177,7 +177,7 @@
           }
         },
         {
-          "ruleId": "ef077226-ac09-43ee-827f-b29d5122b0f9-Cross Site Scripting (Reflected)",
+          "ruleId": "b352aaeb-929e-4d35-8849-b4dcd500e5d3-Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -199,7 +199,7 @@
             }
           ],
           "partialFingerprints": {
-            "nightvisionIssueID/v1": "ef077226-ac09-43ee-827f-b29d5122b0f9"
+            "nightvisionIssueID/v1": "b352aaeb-929e-4d35-8849-b4dcd500e5d3"
           },
           "baselineState": "new",
           "rank": 100,
