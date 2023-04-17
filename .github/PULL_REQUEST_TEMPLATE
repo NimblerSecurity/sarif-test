@@ -1,0 +1,14 @@
+## What does this PR do?
+
+[//]: # (Required: Describe the effects of your pull request in detail. If
+multiple changes are involved, a bulleted list is often useful.)
+
+## Completion checklist
+
+PR Gardening:
+- [ ] At a minimum, the PR contains a description that is in-depth enough for someone to look back a month or two from now and understand what the PR does.
+- [ ] The pull request has been appropriately labeled using the provided PR labels
+
+Testing:
+- [ ] You have tested it locally
+- [ ] Additions and changes have unit tests and are passing the GitHub Actions automated tests
