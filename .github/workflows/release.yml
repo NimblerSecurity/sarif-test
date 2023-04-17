@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: (1) Clone Code
-          uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: (2) Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
