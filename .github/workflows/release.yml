@@ -1,15 +1,11 @@
-name: 
+name: Upload sarif report
 
 on:
   push:
     main:
 
-permissions:
-  id-token: write # for assuming aws iam role (to publish to s3)
-  contents: write # for publishing to github releases
-
 jobs:
-  goreleaser:
+  upload-sarif:
     runs-on: ubuntu-latest
     steps:
       - name: Upload SARIF file
